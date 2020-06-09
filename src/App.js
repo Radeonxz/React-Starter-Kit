@@ -5,6 +5,10 @@ import { Provider } from "react-redux";
 import configureStore from "./modules/store/configureStore";
 import moduleSagas from "./modules/store/moduleSagas";
 import AppContainer from "./containers/AppContainer";
+import LanguageProviderContainer from "./containers/LanguageProviderContainer";
+
+// import i18n messages
+import { translationMessages } from "./localization/i18n";
 
 const App = () => {
   const store = configureStore();
@@ -12,7 +16,9 @@ const App = () => {
 
   return (
     <Provider store={store}>
-      <AppContainer />
+      <LanguageProviderContainer messages={translationMessages}>
+        <AppContainer />
+      </LanguageProviderContainer>
     </Provider>
   );
 };
