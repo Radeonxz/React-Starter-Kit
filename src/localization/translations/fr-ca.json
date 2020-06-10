@@ -1,1 +1,4 @@
-{}
+{
+  "app.components.Welcome.learnMsg": "Apprendre à utiliser",
+  "app.components.Welcome.welcomeMsg": "Bienvenue à utiliser React starter kit."
+}
