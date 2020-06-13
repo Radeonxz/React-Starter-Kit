@@ -2,17 +2,20 @@
  * AppContainer
  */
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
 // import containers
 import NavigationContainer from "../NavigationContainer";
-import WelcomeContainer from "../WelcomeContainer";
+import AppRoutes from "./AppRoutes";
 
 const AppContainer = () => {
   return (
-    <>
-      <NavigationContainer />
-      <WelcomeContainer />
-    </>
+    <BrowserRouter>
+      <>
+        <NavigationContainer />
+        <AppRoutes />
+      </>
+    </BrowserRouter>
   );
 };
 
