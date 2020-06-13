@@ -11,10 +11,7 @@ import AppRoutes from "./AppRoutes";
 const AppContainer = () => {
   return (
     <BrowserRouter>
-      <>
-        <NavigationContainer />
-        <AppRoutes />
-      </>
+      <AppRoutes />
     </BrowserRouter>
   );
 };
