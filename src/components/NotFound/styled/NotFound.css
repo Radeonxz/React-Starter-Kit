@@ -1,0 +1,15 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
