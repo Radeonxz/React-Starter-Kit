@@ -6,7 +6,9 @@ import Language from "../../modules/Language";
 // import container
 import NavigationContainer from "./NavigationContainer";
 
-const mapStateToProps = () => ({});
+const mapStateToProps = (state) => ({
+  locale: Language.selectors.selectLocale(state)
+});
 
 const mapDispatchToProps = (dispatch) => ({
   changeLocale: (locale) => dispatch(Language.actions.changeLocale(locale))

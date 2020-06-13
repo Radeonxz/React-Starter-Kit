@@ -7,8 +7,12 @@
 import { defineMessages } from "react-intl";
 
 export default defineMessages({
-  notFoundMsg: {
-    id: "app.components.NotFound.notFoundMsg",
+  notFound: {
+    id: "app.components.NotFound.notFound",
     defaultMessage: "Page Not Found"
+  },
+  toHome: {
+    id: "app.components.NotFound.toHome",
+    defaultMessage: "To Home"
   }
 });

@@ -3,6 +3,7 @@
  */
 import React from "react";
 import { useIntl } from "react-intl";
+import { NavLink } from "react-router-dom";
 import messages from "./messages";
 import "./styled/NotFound.css";
 
@@ -12,7 +13,10 @@ const NotFound = () => {
     <div className="container">
       <div className="wrapper">
         <h1>404</h1>
-        <p>{intl.formatMessage(messages.notFoundMsg)}</p>
+        <p>{intl.formatMessage(messages.notFound)}</p>
+        <NavLink className="App-link" to="/">
+          {intl.formatMessage(messages.toHome)}
+        </NavLink>
       </div>
     </div>
   );
