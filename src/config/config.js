@@ -1,5 +1,5 @@
 import merge from "merge";
-import baseConfig from "./app.config.dev.json";
+import baseConfig from "./app.config.base.json";
 import devConfig from "./app.config.dev.json";
 import prodConfig from "./app.config.prod.json";
 

@@ -4,17 +4,17 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-// import page container
-import WelcomeContainer from "../WelcomeContainer";
-import NotFoundContainer from "../NotFoundContainer";
+// import pages
+import HomePage from "../../pages/HomePage";
+import NotFoundPage from "../../pages/NotFoundPage";
 
 const AppRoutes = () => (
   <Switch>
     <Route exact path="/">
-      <WelcomeContainer />
+      <HomePage />
     </Route>
     <Route path="*">
-      <NotFoundContainer />
+      <NotFoundPage />
     </Route>
   </Switch>
 );
