@@ -5,13 +5,15 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
 // import containers
-import NavigationContainer from "../NavigationContainer";
+import ThemeProviderContainer from "../ThemeProviderContainer";
 import AppRoutes from "./AppRoutes";
 
 const AppContainer = () => {
   return (
     <BrowserRouter>
-      <AppRoutes />
+      <ThemeProviderContainer>
+        <AppRoutes />
+      </ThemeProviderContainer>
     </BrowserRouter>
   );
 };

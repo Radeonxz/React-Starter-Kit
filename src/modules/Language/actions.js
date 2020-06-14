@@ -1,7 +1,5 @@
 /*
- *
- * LanguageProvider actions
- *
+ * Language actions
  */
 import { CHANGE_LOCALE } from "./constants";
 

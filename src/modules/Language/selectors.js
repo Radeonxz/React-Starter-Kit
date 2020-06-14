@@ -1,7 +1,7 @@
 import { createSelector } from "reselect";
 
 /**
- * Direct selector to the languageToggle state domain
+ * Direct selector to the Language state
  */
 const selectLanguage = (state) => state.Language;
 
