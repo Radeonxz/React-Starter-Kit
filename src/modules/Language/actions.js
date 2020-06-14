@@ -3,9 +3,9 @@
  */
 import { CHANGE_LOCALE } from "./constants";
 
-export const changeLocale = (languageLocale) => {
+export const changeLocale = (locale) => {
   return {
     type: CHANGE_LOCALE,
-    locale: languageLocale
+    payload: { locale }
   };
 };

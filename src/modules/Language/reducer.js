@@ -10,12 +10,11 @@ export const initialState = {
 const languageReducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_LOCALE:
-      if (state.locale !== action.locale) {
-        return {
-          ...state,
-          locale: action.locale
-        };
-      }
+      const { locale } = action.payload;
+      return {
+        ...state,
+        locale
+      };
 
     default:
       return state;
