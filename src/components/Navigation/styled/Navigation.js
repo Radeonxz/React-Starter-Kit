@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
   top: 0;
   width: 100%;
   height: 3.5rem;
-  background-color: ${(props) => props.theme.color.naviBackground};
+  background-color: ${(props) => props.theme.background[1]};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +15,7 @@ export const StyledHeader = styled.header`
     margin: 0 1rem;
 
     a {
-      color: ${(props) => props.theme.color.color};
+      color: ${(props) => props.theme.text[1]};
       margin: 0;
       cursor: pointer;
       text-decoration: none;
@@ -41,7 +41,7 @@ export const StyledHeader = styled.header`
     a,
     button {
       text-decoration: none;
-      color: ${(props) => props.theme.color.color};
+      color: ${(props) => props.theme.text[1]};
       padding: 0.25rem 0.5rem;
       border: none;
       font: inherit;
@@ -52,8 +52,8 @@ export const StyledHeader = styled.header`
 
       &:hover,
       &.active {
-        color: ${(props) => props.theme.color.color};
-        background: ${(props) => props.theme.color.hoverColor};
+        color: ${(props) => props.theme.text[1]};
+        background: ${(props) => props.theme.background[4]};
         border-radius: 5px;
       }
     }
