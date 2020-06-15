@@ -1,11 +1,11 @@
 /*
- * Language
+ * Theme
  */
 import * as rootActions from "./actions";
 import rootReducer from "./reducer";
 import * as rootSelectors from "./selectors";
 
-const Language = {
+const Theme = {
   actions: {
     ...rootActions
   },
@@ -15,4 +15,4 @@ const Language = {
   }
 };
 
-export default Language;
+export default Theme;

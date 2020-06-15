@@ -18,5 +18,9 @@ export default defineMessages({
   changeLocale: {
     id: "app.components.NotFound.changeLocale",
     defaultMessage: "Change Locale"
+  },
+  changeTheme: {
+    id: "app.components.NotFound.changeTheme",
+    defaultMessage: "Change Theme"
   }
 });

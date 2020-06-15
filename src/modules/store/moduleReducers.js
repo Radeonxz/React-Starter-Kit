@@ -5,6 +5,7 @@ import { combineReducers } from "redux";
 
 // import your reducers
 import Language from "../Language";
+import Theme from "../Theme";
 
 /**
  * Creates the main reducer
@@ -12,6 +13,7 @@ import Language from "../Language";
 export default function createReducer() {
   return combineReducers({
     // inject imported reducers here
-    Language: Language.reducer
+    Language: Language.reducer,
+    Theme: Theme.reducer
   });
 }

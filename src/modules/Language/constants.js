@@ -1,7 +1,5 @@
 /*
- *
- * LanguageProvider constants
- *
+ * Language constants
  */
 const SCOPE = "Language/";
 
