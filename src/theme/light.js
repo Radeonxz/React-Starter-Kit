@@ -154,11 +154,11 @@ export default {
     6: "#8c8c8c"
   },
   colors: {
-    primary: "",
-    secondary: "",
-    success: "",
-    warning: "",
-    error: ""
+    primary: palette.blue[scale],
+    secondary: palette.cyan[scale],
+    success: palette.green[scale],
+    warning: palette.volcano[scale],
+    error: palette.red[scale]
   },
   color: {
     naviBackground: "#dde0bd",
