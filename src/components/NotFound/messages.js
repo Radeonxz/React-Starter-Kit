@@ -13,6 +13,6 @@ export default defineMessages({
   },
   toHome: {
     id: "app.components.NotFound.toHome",
-    defaultMessage: "To Home"
+    defaultMessage: "To Home Page"
   }
 });
