@@ -135,6 +135,8 @@ const palette = {
   }
 };
 
+const scale = 6;
+
 export default {
   ...BASIC,
   background: {
