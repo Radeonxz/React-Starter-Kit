@@ -2,9 +2,11 @@
  * Navigation
  */
 import { NavLink } from "react-router-dom";
+
+import { NavigationProps } from "./Navigation.model"
 import { StyledHeader } from "./styled/Navigation";
 
-const Navigation = ({ locale, currentTheme, changeLocale, changeTheme }) => {
+const Navigation = ({ locale, currentTheme, changeLocale, changeTheme }: NavigationProps) => {
 
   const onClickChangeLocale = () => {
     if (locale === "en-us") return changeLocale("fr-ca");
