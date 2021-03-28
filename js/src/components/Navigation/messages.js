@@ -11,10 +11,6 @@ export default defineMessages({
     id: "app.components.Navigation.logo",
     defaultMessage: "React Starter Kit"
   },
-  home: {
-    id: "app.components.NotFound.home",
-    defaultMessage: "Home"
-  },
   changeLocale: {
     id: "app.components.NotFound.changeLocale",
     defaultMessage: "Change Locale"
