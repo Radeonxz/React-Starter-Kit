@@ -28,14 +28,10 @@ const Navigation = ({ locale, currentTheme, changeLocale, changeTheme }: Navigat
       <div className="header-items">
         <ul>
           <li>
-            <button onClick={() => onClickChangeLocale()}>
-            Change Locale
-            </button>
+            <button onClick={() => onClickChangeLocale()}>Change Locale</button>
           </li>
           <li>
-            <button onClick={() => onClickChangeTheme()}>
-            Change Theme
-            </button>
+            <button onClick={() => onClickChangeTheme()}>Change Theme</button>
           </li>
           <li>
             <NavLink to="/404">404</NavLink>
