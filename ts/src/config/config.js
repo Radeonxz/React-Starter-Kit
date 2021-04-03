@@ -14,7 +14,7 @@ const envConfigs = {
  * @param {string} env Current app environment
  * @returns {object} Configuration object
  */
-export const getConfig = (env: any) => {
+export const getConfig = (env) => {
   let allConfig = baseConfig;
   let envConfig;
   if (env) {
