@@ -4,10 +4,7 @@
 import { BrowserRouter } from "react-router-dom";
 
 const AppContainer = () => {
-  return (
-    <BrowserRouter>
-    </BrowserRouter>
-  );
+	return <BrowserRouter></BrowserRouter>;
 };
 
 export default AppContainer;
