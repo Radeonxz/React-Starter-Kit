@@ -3,8 +3,15 @@
  */
 import { BrowserRouter } from "react-router-dom";
 
+// import containers
+import AppRoutes from "./AppRoutes";
+
 const AppContainer = () => {
-	return <BrowserRouter></BrowserRouter>;
+	return (
+		<BrowserRouter>
+			<AppRoutes />
+		</BrowserRouter>
+	);
 };
 
 export default AppContainer;
