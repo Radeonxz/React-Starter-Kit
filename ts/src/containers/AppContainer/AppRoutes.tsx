@@ -9,7 +9,7 @@ import NotFoundPage from "../../pages/NotFoundPage";
 
 const AppRoutes = () => (
 	<Switch>
-		<Route exact path="/">
+		<Route path="/" exact>
 			<HomePage />
 		</Route>
 		<Route path="*">
