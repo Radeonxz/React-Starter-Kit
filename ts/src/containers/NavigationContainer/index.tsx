@@ -7,12 +7,12 @@ import { connect } from "react-redux";
 // import container
 import NavigationContainer from "./NavigationContainer";
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state: any) => ({
 	// locale: Language.selectors.selectLocale(state),
 	// currentTheme: Theme.selectors.selectCurrentTheme(state)
 });
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (dispatch: any) => ({
 	// changeLocale: (locale) => dispatch(Language.actions.changeLocale(locale)),
 	// changeTheme: (theme) => dispatch(Theme.actions.changeTheme(theme))
 });
