@@ -8,15 +8,15 @@ import WelcomeContainer from "./containers/WelcomeContainer";
 import AppContainer from "./containers/AppContainer";
 
 const App = () => {
-	const store = configureStore();
-	store.runSaga(moduleSagas);
+  const store = configureStore();
+  store.runSaga(moduleSagas);
 
-	return (
-		<Provider store={store}>
-			<AppContainer />
-			<WelcomeContainer />
-		</Provider>
-	);
+  return (
+    <Provider store={store}>
+      <AppContainer />
+      <WelcomeContainer />
+    </Provider>
+  );
 };
 
 export default App;
