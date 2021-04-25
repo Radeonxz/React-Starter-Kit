@@ -20,15 +20,15 @@ export default function configureStore(initialState = {}) {
   const composeEnhancers =
     process.env.NODE_ENV !== "production" &&
     typeof window === "object" &&
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-      ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+    (window && (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+      ? (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
           // Prevent recomputing reducers for `replaceReducer`
           shouldHotReload: false
         })
-      : compose;
+      : compose);
   /* eslint-enable */
 
-  const store = createStore(
+  const store: any = createStore(
     createReducer(),
     initialState,
     composeEnhancers(...enhancers)
