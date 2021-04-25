@@ -23,7 +23,7 @@ export default function configureStore(initialState = {}) {
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
       ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
           // Prevent recomputing reducers for `replaceReducer`
-          shouldHotReload: false,
+          shouldHotReload: false
         })
       : compose;
   /* eslint-enable */
