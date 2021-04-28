@@ -7,7 +7,10 @@ export const initialState = {
   currentTheme: "light"
 };
 
-const themeReducer = (state = initialState, action) => {
+const themeReducer = (
+  state = initialState,
+  action: { type: any; payload: { theme: string } }
+) => {
   switch (action.type) {
     case CHANGE_THEME:
       const { theme } = action.payload;

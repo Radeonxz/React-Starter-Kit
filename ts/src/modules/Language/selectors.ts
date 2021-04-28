@@ -3,7 +3,7 @@ import { createSelector } from "reselect";
 /**
  * Direct selector to the Language state
  */
-const selectLanguage = (state) => state.Language;
+const selectLanguage = (state: { Language: any }) => state.Language;
 
 /**
  * Select the language locale
