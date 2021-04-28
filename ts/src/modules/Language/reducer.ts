@@ -11,7 +11,10 @@ export const initialState: initialStateInterface = {
   locale: "en-us"
 };
 
-const languageReducer = (state = initialState, action) => {
+const languageReducer = (
+  state = initialState,
+  action: { type: any; payload: { locale: string } }
+) => {
   switch (action.type) {
     case CHANGE_LOCALE:
       const { locale } = action.payload;
