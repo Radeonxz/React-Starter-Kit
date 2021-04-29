@@ -6,6 +6,7 @@ import moduleSagas from "./modules/store/moduleSagas";
 
 import WelcomeContainer from "./containers/WelcomeContainer";
 import AppContainer from "./containers/AppContainer";
+import ThemeProviderContainer from "./containers/ThemeProviderContainer";
 
 const App = () => {
   const store = configureStore();
@@ -13,8 +14,10 @@ const App = () => {
 
   return (
     <Provider store={store}>
-      <AppContainer />
-      <WelcomeContainer />
+      <ThemeProviderContainer>
+        <AppContainer />
+        <WelcomeContainer />
+      </ThemeProviderContainer>
     </Provider>
   );
 };
