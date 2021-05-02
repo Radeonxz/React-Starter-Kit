@@ -6,7 +6,13 @@
 import PropTypes from "prop-types";
 import { IntlProvider } from "react-intl";
 
-const LanguageProviderContainer = ({ locale, messages, children }: any) => {
+import { LanguageProviderProps } from "./models";
+
+const LanguageProviderContainer = ({
+  locale,
+  messages,
+  children
+}: LanguageProviderProps) => {
   return (
     <IntlProvider locale={locale} key={locale} messages={messages[locale]}>
       {children}
