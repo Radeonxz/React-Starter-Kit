@@ -20,22 +20,4 @@ const LanguageProviderContainer = ({
   );
 };
 
-LanguageProviderContainer.propTypes = {
-  /**
-   * Current locale
-   */
-  locale: PropTypes.string,
-  /**
-   * Messages string for react-intl
-   */
-  messages: PropTypes.object,
-  /**
-   * To render children
-   */
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ]).isRequired
-};
-
 export default LanguageProviderContainer;
