@@ -6,13 +6,13 @@ import Language from "../../modules/Language";
 // import container
 import LanguageProviderContainer from "./LanguageProviderContainer";
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state: { Language: any }) => ({
   locale: Language.selectors.selectLocale(state)
 });
 
-const mapDispatchToProps = (dispatch) => ({});
+// const mapDispatchToProps = (dispatch) => ({});
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps
+  // mapDispatchToProps
 )(LanguageProviderContainer);
