@@ -3,7 +3,6 @@
  * LanguageProviderContainer
  *
  */
-import PropTypes from "prop-types";
 import { IntlProvider } from "react-intl";
 
 import { LanguageProviderProps } from "./models";
