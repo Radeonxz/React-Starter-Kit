@@ -6,11 +6,11 @@
 import NotFoundContainer from "../../containers/NotFoundContainer";
 
 const NotFoundPage = () => {
-	return (
-		<>
-			<NotFoundContainer />
-		</>
-	);
+  return (
+    <>
+      <NotFoundContainer />
+    </>
+  );
 };
 
 export default NotFoundPage;

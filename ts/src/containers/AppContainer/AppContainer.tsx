@@ -7,11 +7,11 @@ import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 
 const AppContainer = () => {
-	return (
-		<BrowserRouter>
-			<AppRoutes />
-		</BrowserRouter>
-	);
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 };
 
 export default AppContainer;
