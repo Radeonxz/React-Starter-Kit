@@ -4,7 +4,6 @@ import { Provider } from "react-redux";
 import configureStore from "./modules/store/configureStore";
 import moduleSagas from "./modules/store/moduleSagas";
 
-import WelcomeContainer from "./containers/WelcomeContainer";
 import AppContainer from "./containers/AppContainer";
 import LanguageProviderContainer from "./containers/LanguageProviderContainer";
 import ThemeProviderContainer from "./containers/ThemeProviderContainer";
@@ -21,7 +20,6 @@ const App = () => {
       <LanguageProviderContainer messages={translationMessages}>
         <ThemeProviderContainer>
           <AppContainer />
-          <WelcomeContainer />
         </ThemeProviderContainer>
       </LanguageProviderContainer>
     </Provider>
