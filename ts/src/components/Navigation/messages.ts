@@ -7,6 +7,10 @@
 import { defineMessages } from "react-intl";
 
 export default defineMessages({
+  logoMsg: {
+    id: "app.components.Navigation.logoMsg",
+    defaultMessage: "React Starter Kit"
+  },
   changeLocale: {
     id: "app.components.Navigation.changeLocale",
     defaultMessage: "Change Locale"
