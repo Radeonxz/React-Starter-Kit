@@ -29,7 +29,7 @@ const Navigation = ({
     <StyledHeader>
       <div className="header-logo">
         <NavLink to="/">
-          <h3>React Starter Kit</h3>
+          <h3>{intl.formatMessage(messages.logoMsg)}</h3>
         </NavLink>
       </div>
       <div className="header-items">
