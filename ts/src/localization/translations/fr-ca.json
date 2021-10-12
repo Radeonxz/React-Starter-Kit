@@ -1,4 +1,7 @@
 {
   "app.components.Welcome.learnMsg": "Apprendre à utiliser",
-  "app.components.Welcome.welcomeMsg": "Bienvenue à utiliser React starter kit."
+  "app.components.Welcome.welcomeMsg": "Bienvenue à utiliser React starter kit.",
+  "app.components.Navigation.logoMsg": "Kit de démarrage React",
+  "app.components.Navigation.changeLocale": "Change la langue",
+  "app.components.Navigation.changeTheme": "Change le thème"
 }

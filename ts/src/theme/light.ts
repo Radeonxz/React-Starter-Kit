@@ -1,4 +1,4 @@
-import BASIC from "./basic";
+import { BASIC } from "./basic";
 
 const palette = {
   red: {
@@ -137,7 +137,7 @@ const palette = {
 
 const scale = 6;
 
-export default {
+export const LightTheme = {
   ...BASIC,
   background: {
     1: "#fafafa",

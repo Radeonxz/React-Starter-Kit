@@ -6,14 +6,14 @@
 import { ThemeProvider } from "styled-components";
 
 import { ThemeProviderProps } from "./models";
-import { Light, Dark } from "../../theme";
+import { LightTheme, DarkTheme } from "../../theme";
 
 const ThemeProviderContainer = ({
   currentTheme,
   children
 }: ThemeProviderProps) => {
   return (
-    <ThemeProvider theme={currentTheme === "dark" ? Dark : Light}>
+    <ThemeProvider theme={currentTheme === "dark" ? DarkTheme : LightTheme}>
       {children}
     </ThemeProvider>
   );
