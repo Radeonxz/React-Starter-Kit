@@ -20,10 +20,18 @@ const Navigation = ({ locale, currentTheme, changeLocale, changeTheme }) => {
     return changeTheme("light");
   };
 
+  const generateUID = () => {
+    let firstPart = (Math.random() * 46656) | 0;
+    let secondPart = (Math.random() * 46656) | 0;
+    firstPart = ("000" + firstPart.toString(36)).slice(-3);
+    secondPart = ("000" + secondPart.toString(36)).slice(-3);
+    return firstPart + secondPart;
+  };
+
   return (
     <StyledHeader>
       <div className="header-logo">
-        <NavLink to="/">
+        <NavLink to="/React-Starter-Kit">
           <h3>{intl.formatMessage(messages.logo)}</h3>
         </NavLink>
       </div>
@@ -40,7 +48,7 @@ const Navigation = ({ locale, currentTheme, changeLocale, changeTheme }) => {
             </button>
           </li>
           <li>
-            <NavLink to="/404">404</NavLink>
+            <NavLink to={`/${generateUID()}`}>404</NavLink>
           </li>
         </ul>
       </div>

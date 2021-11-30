@@ -14,7 +14,7 @@ const NotFound = () => {
       <div className="wrapper">
         <h1>404</h1>
         <p>{intl.formatMessage(messages.notFound)}</p>
-        <NavLink className="App-link" to="/">
+        <NavLink className="App-link" to="/React-Starter-Kit">
           {intl.formatMessage(messages.toHome)}
         </NavLink>
       </div>
