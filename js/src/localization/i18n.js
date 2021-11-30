@@ -10,14 +10,15 @@
 
 const enUsTranslationMessages = require("./translations/en-us.json");
 const frCaTranslationMessages = require("./translations/fr-ca.json");
+// import { default as enUsTranslationMessages } from "./translations/en-us.json";
+// import { default as frCaTranslationMessages } from "./translations/fr-ca.json";
 
 const DEFAULT_LOCALE = "en-us";
 
-// prettier-ignore
-const appLocales = [
-    'en-us',
-    'fr-ca'
-];
+// const appLocales = [
+//     'en-us',
+//     'fr-ca'
+// ];
 
 const formatTranslationMessages = (locale, messages) => {
   const defaultFormattedMessages =
@@ -40,7 +41,9 @@ const translationMessages = {
     'fr-ca': formatTranslationMessages('fr-ca', frCaTranslationMessages)
 };
 
-exports.appLocales = appLocales;
-exports.formatTranslationMessages = formatTranslationMessages;
-exports.translationMessages = translationMessages;
-exports.DEFAULT_LOCALE = DEFAULT_LOCALE;
+// exports.appLocales = appLocales;
+// exports.formatTranslationMessages = formatTranslationMessages;
+// exports.translationMessages = translationMessages;
+// exports.DEFAULT_LOCALE = DEFAULT_LOCALE;
+
+export { translationMessages };
