@@ -1,9 +1,10 @@
 /**
+ *
  * Navigation
+ *
  */
-import React from "react";
 import { useIntl } from "react-intl";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import messages from "./messages";
 import { StyledHeader } from "./styled/Navigation";
 
@@ -31,9 +32,9 @@ const Navigation = ({ locale, currentTheme, changeLocale, changeTheme }) => {
   return (
     <StyledHeader>
       <div className="header-logo">
-        <NavLink to="/React-Starter-Kit">
+        <Link to="/React-Starter-Kit">
           <h3>{intl.formatMessage(messages.logo)}</h3>
-        </NavLink>
+        </Link>
       </div>
       <div className="header-items">
         <ul>
@@ -48,7 +49,7 @@ const Navigation = ({ locale, currentTheme, changeLocale, changeTheme }) => {
             </button>
           </li>
           <li>
-            <NavLink to={`/${generateUID()}`}>404</NavLink>
+            <Link to={`/${generateUID()}`}>404</Link>
           </li>
         </ul>
       </div>

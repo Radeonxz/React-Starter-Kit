@@ -1,7 +1,8 @@
 /**
+ *
  * NotFound
+ *
  */
-import React from "react";
 import { useIntl } from "react-intl";
 import { NavLink } from "react-router-dom";
 import messages from "./messages";

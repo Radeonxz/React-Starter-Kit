@@ -1,7 +1,8 @@
 /**
+ *
  * Welcome
+ *
  */
-import React from "react";
 import { useIntl } from "react-intl";
 import messages from "./messages";
 import "./styled/Welcome.css";
