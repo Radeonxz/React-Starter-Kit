@@ -1,4 +1,9 @@
 {
+  "app.components.Navigation.changeLocale": "Changer de Locale",
+  "app.components.Navigation.changeTheme": "Changement de thème",
+  "app.components.Navigation.logo": "React starter kit",
   "app.components.Welcome.learnMsg": "Apprendre à utiliser",
-  "app.components.Welcome.welcomeMsg": "Bienvenue à utiliser React starter kit."
+  "app.components.Welcome.welcomeMsg": "Bienvenue à utiliser React starter kit.",
+  "app.components.NotFound.notFound": "Page non trouvée",
+  "app.components.NotFound.toHome": "Vers la page d'accueil"
 }

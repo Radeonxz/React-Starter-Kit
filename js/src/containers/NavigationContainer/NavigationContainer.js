@@ -1,8 +1,8 @@
 /**
+ *
  * NavigationContainer
+ *
  */
-import React from "react";
-
 // import components
 import Navigation from "../../components/Navigation";
 

@@ -1,8 +1,8 @@
 /**
+ *
  * HomePage
+ *
  */
-import React from "react";
-
 // import containers
 import NavigationContainer from "../../containers/NavigationContainer";
 import WelcomeContainer from "../../containers/WelcomeContainer";

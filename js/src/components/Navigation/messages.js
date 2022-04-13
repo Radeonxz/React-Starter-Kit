@@ -12,11 +12,11 @@ export default defineMessages({
     defaultMessage: "React Starter Kit"
   },
   changeLocale: {
-    id: "app.components.NotFound.changeLocale",
+    id: "app.components.Navigation.changeLocale",
     defaultMessage: "Change Locale"
   },
   changeTheme: {
-    id: "app.components.NotFound.changeTheme",
+    id: "app.components.Navigation.changeTheme",
     defaultMessage: "Change Theme"
   }
 });
