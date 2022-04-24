@@ -1,7 +1,7 @@
 /**
  * NotFound
  */
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
 
 import messages from "./messages";
@@ -14,9 +14,9 @@ const NotFound = () => {
       <div className="wrapper">
         <h1>404</h1>
         <p>{intl.formatMessage(messages.notFoundMsg)}</p>
-        <NavLink className="App-link" to="/">
+        <Link className="App-link" to="/">
           {intl.formatMessage(messages.toHome)}
-        </NavLink>
+        </Link>
       </div>
     </div>
   );

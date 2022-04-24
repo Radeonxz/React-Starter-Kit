@@ -1,7 +1,7 @@
 /**
  * Navigation
  */
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
 
 import messages from "./messages";
@@ -28,9 +28,9 @@ const Navigation = ({
   return (
     <StyledHeader>
       <div className="header-logo">
-        <NavLink to="/">
+        <Link to="/">
           <h3>{intl.formatMessage(messages.logoMsg)}</h3>
-        </NavLink>
+        </Link>
       </div>
       <div className="header-items">
         <ul>
@@ -45,7 +45,7 @@ const Navigation = ({
             </button>
           </li>
           <li>
-            <NavLink to="/404">404</NavLink>
+            <Link to="/404">404</Link>
           </li>
         </ul>
       </div>
